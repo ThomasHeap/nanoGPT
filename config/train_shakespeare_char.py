@@ -2,9 +2,11 @@
 # good for debugging and playing on macbooks and such
 
 out_dir = 'out-shakespeare-char'
-eval_interval = 250 # keep frequent because we'll overfit
-eval_iters = 200
+eval_interval = 50 # keep frequent because we'll overfit
+eval_iters = 20
 log_interval = 10 # don't print too too often
+num_epochs = 1
+num_iters = 5000
 
 # we expect to overfit on this small dataset, so only save when val improves
 always_save_checkpoint = False
